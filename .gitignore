@@ -1,4 +1,5 @@
 .venv
 users.db
+books.db
 __pycache__
 .env
