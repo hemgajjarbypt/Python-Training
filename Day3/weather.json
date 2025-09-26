@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": 72.6167,
+        "lat": 23.0333
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 33.88,
+        "feels_like": 36.58,
+        "temp_min": 33.88,
+        "temp_max": 33.88,
+        "pressure": 1004,
+        "humidity": 45,
+        "sea_level": 1004,
+        "grnd_level": 999
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.77,
+        "deg": 352,
+        "gust": 3.03
+    },
+    "clouds": {
+        "all": 67
+    },
+    "dt": 1758879597,
+    "sys": {
+        "country": "IN",
+        "sunrise": 1758848363,
+        "sunset": 1758891745
+    },
+    "timezone": 19800,
+    "id": 1279233,
+    "name": "Ahmedabad",
+    "cod": 200
+}
