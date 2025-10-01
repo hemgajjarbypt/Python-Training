@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
+from sqlalchemy.exc import IntegrityError
 from database import SessionLocal, Book as BookModel, Base, engine
 
 Base.metadata.create_all(bind=engine)
@@ -23,12 +24,14 @@ def get_db():
 # create book route
 @app.post("/books")
 async def create_book_api(book: Book, db: Session = Depends(get_db)):
-
-    db_book = BookModel(title=book.title, author=book.author, year=book.year)
-    db.add(db_book)
-    db.commit()
-    db.refresh(db_book)
-    
+    try:
+        db_book = BookModel(title=book.title, author=book.author, year=book.year)
+        db.add(db_book)
+        db.commit()
+        db.refresh(db_book)
+    except IntegrityError:
+        db.rollback()
+        raise HTTPException(status_code=400, detail="Book with this title already exists")
     return {"message": "Book added successfully", "task": {"title": db_book.title}}
 
 # Get all books

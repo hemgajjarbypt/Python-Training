@@ -1,5 +1,12 @@
 .venv
+.vscode
+.DS_Store
 users.db
 books.db
+tasks.db
+test_tasks.db
 __pycache__
 .env
+.pytest_cache
+htmlcov
+.coverage

@@ -1,0 +1,1 @@
+pytest --cov=app --cov-report=html test_app.py
