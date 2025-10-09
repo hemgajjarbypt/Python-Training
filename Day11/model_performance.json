@@ -1,0 +1,14 @@
+{
+    "BERT": {
+        "total_sentences": 50,
+        "total_time_sec": 2.4482,
+        "avg_inference_time_sec": 0.049,
+        "device": "cpu"
+    },
+    "DistilBERT": {
+        "total_sentences": 50,
+        "total_time_sec": 1.0355,
+        "avg_inference_time_sec": 0.0207,
+        "device": "cpu"
+    }
+}
