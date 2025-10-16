@@ -1,0 +1,2 @@
+2025-10-16 17:38:37,191 - INFO - INVALID: 127.0.0.1 - GET /sada status=404 duration=0.002s
+2025-10-16 17:38:45,246 - INFO - 127.0.0.1 - GET / status=200 duration=0.005s

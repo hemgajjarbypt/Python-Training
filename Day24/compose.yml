@@ -1,0 +1,6 @@
+services:
+  my_python_ai_service:
+    hostname: my_python_ai_service
+    image: hemgajjarbypt/my_python_ai_image:latest
+    ports:
+      - 8501:8501
